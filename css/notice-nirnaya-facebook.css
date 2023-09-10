@@ -1,0 +1,318 @@
+/* notice style start */
+.notice-with-multiple-tab{
+    display: flex;
+    width: 100%;
+}
+.tab1{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 15px 0 10px -10px rgba(0, 0, 0, 0.1);
+   
+}
+.tab1>button{
+    width: 120px;
+    background-color: var(--blue);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.tab1>button:hover{
+    background-color: var(--red);
+    transform: scale(1.1);
+    transition: 0.6s all;
+}
+.tab1>.title-div>ul{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    overflow-x: auto;
+}
+.tab1>.title-div{
+    background-color: var(--blue);
+    /* padding: 10px; */
+}
+.tab1>.title-div>ul>li{
+    list-style-type:none ;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.notice-div>a{
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    align-items: flex-start;
+    text-align: justify;
+    font-size: 0.89rem;
+}
+.notice-div>a>strong{
+    padding-left: 10px;
+}
+/* notice style end */
+/* important links start */
+.important-links{
+ width: 320px;
+ min-width: 300px;
+ margin-left: 20px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.important-links>h2{
+ padding: 10px;
+ background-color: var(--blue);
+ color: white;
+ font-size: 1.2rem;
+}
+.important-links>div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* margin-left: 10px; */
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.important-links>div>a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid lightgray;
+    background-color: #1e73be;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 93%;
+    
+}
+.important-links>div>a>svg{
+  margin-right: 10px;
+  fill:  white;
+}
+.important-links>div>a:hover{
+  background-color: white;
+  color: var(--blue);
+}
+.important-links>div>a:hover > svg{
+    fill: var(--blue);
+}
+/* important links end */
+
+/* publication start */
+.publication{
+   background-color: rgba(0,0,0,0.2);
+   padding: 10px;
+   margin-bottom: 10px;
+}
+.publication>h2{
+ padding: 5px;
+ color: var(--blue);
+ border-bottom: 4px solid var(--red);
+ margin-bottom: 5px;
+ width: fit-content;
+ font-size: 1.5rem;
+
+}
+.publication>div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 20px;
+    overflow-x: scroll;
+}
+.publication-card{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: white;
+    margin-right: 10px;
+
+}
+.publication-card>p{
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.publication::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    
+    .publication>div::-webkit-scrollbar
+    {
+        height: 5px;
+        background-color: #F5F5F5;
+    }
+    
+    .publication>div::-webkit-scrollbar-thumb
+    {
+        border-radius: 3px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: var(--red);
+    }
+/* publication end */
+
+/* nirnaya with facebook page  start */
+
+
+.nirnaya-facebook-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(0,0,128, 0.1);
+    padding: 5px;
+    align-content: stretch;
+}
+.nirnaya{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 0px;
+    width: 100%;
+    
+ }
+.nirnaya-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    max-width: 315px;
+    margin: 0px;
+    height: fit-content;
+    margin-top: 0px;
+    background-color: white;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: fit-content;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-width: 320px;
+    flex-grow: 1;
+    max-width: 100%;
+    min-height: 500px;
+
+}
+
+.nirnaya-card>h2{
+    text-transform: uppercase;
+    background-color: var(--blue);
+  
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    float: right;
+    padding-left: 40px;
+    position: relative;
+}
+.nirnaya-card>h2>div{
+   
+    padding: 10px;
+    width: fit-content;
+    width: 40px;
+    height: 44px;
+    background-color: white;
+   position: absolute;
+   left: -15px;
+   top: -0px;
+   transform: skew(-30deg);
+
+
+}
+.nirnaya-card>div{
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid var(--red);
+    padding-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.nirnaya-card>div>a{
+    text-decoration: none;
+    padding: 5px;
+    text-align: justify;
+    display: flex;
+    align-items: start;
+    font-size: 0.9rem;
+}
+.nirnaya-card>div>a>i{
+  
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* facebook page start */
+.facebook-page{
+    min-width: 300px;
+    height: 500px;
+}
+/* facebook page end */
+
+/* nirnaya with facebook page  end */
+
+
+/* last div before map start */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+}
+.all-menu-with-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+}
+.small-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  lightgrey;
+    height: 170px;
+    width: 170px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+.small-card>div{
+   
+    
+}
+.small-card>div>img{
+    /* height: 100px; */
+    width: auto ;
+}
+.small-card>p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+.small-card:hover{
+    background: linear-gradient(to right, #fba500 0%, #fba800 16%, #fecb00 59%, #ffd101 70%, #ffd200 100%);
+}
+/* last div before map end */
+
+/* google map div style start */
+.full-width-google-map{
+    width: auto;
+    height: 400px;
+    /* margin: 1.25rem; */
+}
+/* google map div style end */

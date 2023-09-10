@@ -1,0 +1,452 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito+Sans:opsz,wght@6..12,600&family=PT+Serif:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+  overflow-x: hidden;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+:root{
+    --red: rgb(178, 28, 66);;
+    --blue:#053775;
+}
+
+ /* style for the above header  start */
+.verticle-line {
+    border: 1px solid var(--red);
+    height: 1.25rem;
+    margin-right: 20px;
+
+}
+
+.top-header {
+    background-color: white;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid lightblue; */
+    padding: 0px 20px 0px 40px;
+    border-bottom: 1px solid var(--red);
+    opacity: 0.8;
+
+}
+
+.top-header>p {
+    display: flex;
+    align-items: baseline;
+    color: var(--blue);
+}
+
+.top-header>p>img {
+    margin-right: 10px;
+}
+
+.top-header>p {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-size: 0.75rem;
+}
+
+.top-header>.right-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.disability-helper {
+    display: flex;
+    align-items: center;
+}
+
+.disability-helper>button {
+    font-size: 0.75rem;
+    border: none;
+    margin-right: 25px;
+    outline: none;
+}
+
+.social-icon>svg {
+    margin-right: 0.5rem;
+}
+
+ /* style for the above header  start */
+
+ /* style for the logos and name  start */
+  .logo-with-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    /* border-bottom: 1px solid lightslategrey; */
+  }
+
+  .logo-name {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .logo-name img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Add some space between the logo and text */
+  }
+
+  .logo-name div {
+    text-align: right;
+  }
+
+  .flag img {
+    width: 70px; /* Adjust the width as needed */
+    height: auto;
+  }
+
+  /* Style the paragraph text as needed */
+  .logo-name p {
+    margin: 0;
+    font-size: 1rem; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color as needed */
+    text-align: start;
+  }
+  .logo-name>div>p:first-child{
+     color: var(--red);
+     font-weight: 600;
+     margin-bottom: 10px;
+  }
+  .logo-name>div>h2{
+     color: black;
+     font-size:1.2rem ;
+     font-weight:700 ;
+     margin-bottom: 10px;
+  }
+
+ /* style for the logos and name  start */
+
+/* navigation menu style start */
+.navigation-menu{
+    height: 35px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 5px;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+.navigation-menu>svg{
+  
+  
+}
+.navigation-menu>ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.navigation-menu>ul>li{
+    list-style-type: none;
+    padding-left: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Serif', serif;
+    color: white;
+    font-size: 0.87rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    
+}
+.navigation-menu>ul>li>svg{
+    margin-left: 0.1rem;
+}
+
+
+/* navigation code end */
+
+/* slider start */
+
+/* Style the slider container */
+.slider {
+    width: 78%;
+    max-width: 78%;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 0px;
+  }
+  
+  /* Style the sliding div containing image and buttons */
+  .sliding-div {
+    position: relative;
+  }
+  /* Add this CSS to your stylesheet */
+
+.taja-khabar {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  animation: moveRightToLeft 10s linear infinite;
+}
+
+.taja-khabar  {
+  margin-right: 20px; 
+  padding: 3px;
+  text-transform: capitalize;
+  margin-top: 0px;
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+  /* Style the image */
+  #slider-image {
+    height: 480px;
+    width: 100%;
+  }
+  
+  /* Style the title text */
+  #slider-title {
+    position: absolute;
+    bottom: 50px;
+    right: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    z-index: 1; /* Ensure the title is above the buttons */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'PT Serif', serif;
+
+  }
+  
+  /* Style the left and right buttons */
+  .leftBtnForSlider,
+  .rightBtnForSlider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 2; /* Ensure the buttons are above the image */
+    height: 35px;
+    width: 35px;
+    fill: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0.6;
+  }
+  
+  .leftBtnForSlider {
+    left: 0px;
+    fill: white;
+    height: 35px;
+    width: 35px;
+  }
+  
+  .rightBtnForSlider {
+    right: 0px;
+  }
+ .leftBtnForSlider:hover , .rightBtnForSlider:hover{
+   opacity: 1;
+  }
+
+  
+
+  
+/* slider end*/
+
+/* below the slider about-at-a-glance */
+.about-at-a-glance{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 10px;
+  align-content: stretch;
+  padding-bottom: 10px;
+  padding-left: 1px;
+}
+.about{
+  width:70%;
+  background-color: white;
+  padding: 10px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  box-shadow: 0 0 12px rgba(0,0,0,.4);
+  /* margin: 10px; */
+/* 
+margin-top: 0px; */
+/* margin-left: 2px;
+
+padding-top:5px ; */
+}
+.about>h2{
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--blue);
+  width: fit-content;
+  color: var(--red);
+}
+.about>p{
+  text-align: justify;
+  line-height: 1.8rem;
+  color: var(--blue);
+  letter-spacing: 1px;
+}
+.read-more-button{
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  padding: 10px;
+  border-radius:4px ;
+  margin-top: 10px;
+}
+/* about start */
+
+/* at a glance start */
+.at-a-glance{
+  display: flex;
+  width: fit-content;
+  min-width: 250px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.at-a-glance>div>h2{
+  text-align: center;
+}
+.at-a-glance .both-list{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.both-list>ul{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.both-list>ul>li{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.both-list>ul>li>p{
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+.both-list>ul>li>p{
+  font-size: 1.09rem;
+  color: black;
+}
+/* at a glance end */
+
+/* about end*/
+
+
+/* profile div start */
+.positiondiv{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile-div {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ padding: 10px;
+ padding-top: 0px;
+}
+
+/* Style the image */
+.profile-div img {
+ height: auto;
+ width: 140px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+
+ /* border-radius: 50%; */
+
+}
+
+/* Style the details container */
+.profile-div .details {
+  flex: 1;
+  margin-left: 1.4rem;
+  border-left: 10px solid var(--blue);
+  padding-left: 20px;
+}
+.profile-div>div>p:first-child{
+  font-size: 1.2rem;
+}
+.profile-div>div>p:nth-child(2){
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+/* Style the buttons */
+.profile-div .buttons button {
+  margin-right: 10px;
+}
+
+
+/* profile div end */
+.fade-out {
+  opacity: 0;
+  transform: translateY(20px); /* Adjust the value for the desired initial position */
+
+  /* Animation properties */
+  animation-name: fadeUpAnimation;
+  animation-duration: 1s; /* Adjust the duration as needed */
+  animation-timing-function: ease-in-out; /* Adjust the timing function */
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust the initial position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar
+    {
+        width: 12px;
+        background-color: #F5F5F5;
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+        border-radius: 3px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: var(--blue);
+    }

@@ -1,0 +1,85 @@
+.footer{
+    background-color: var(--blue);
+    color: white;
+}
+
+.footer-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: stretch;
+    align-content: stretch;
+}
+.links{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding-left: 10px;
+}
+.links>h2 , .prabakta>h2 ,.contact-info>h2{
+    color:white;
+    border-bottom: 3px solid var(--red);
+    width: fit-content;
+    padding-bottom: 6px;
+}
+.flex-div{
+    display: flex;
+}
+.flex-div>div{
+    display: flex;
+    flex-direction: column;
+    margin: 0.75rem;
+    margin-left: 0px;
+}
+.flex-div>div>a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.86rem;
+    padding: 5px;
+}
+.prabakta{
+    padding:10px ;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.prabakta>div{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 30px;
+
+}
+.prabakta>div>img{
+    border-radius: 10px;
+}
+.prabakta>div>div{
+    padding-left: 10px;
+}
+.prabakta>div>div>p{
+    padding: 10px;
+}
+.prabakta>div>div>p:first-child{
+ font-size: 1.5rem;
+
+}
+
+
+.contact-info{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 10px;
+    width: fit-content;
+}
+.contact-info>div{
+    margin-top: 20px;
+}
+.contact-info>div>p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+}
+.copyright-info{
+    background-color: var(--red);
+    height: 40px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
