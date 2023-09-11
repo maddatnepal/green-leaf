@@ -141,7 +141,7 @@
     
     #drawer-toggle:checked ~ #drawer-toggle-label { 
     height: 100%; 
-    width: 50px; 
+    width: 100%; 
     } 
     
     #drawer-toggle:checked ~ #drawer-toggle-label, 
@@ -168,6 +168,10 @@
   
   /* Adjust the position of the toggle drawer button when the drawer is open */
   #drawer-toggle:checked ~ #drawer-toggle-label {
-    left: 300px; /* Adjust this value to match the width of your drawer */
+    left: 300px; 
+    top: -120px;
+    color: white;
+    transition: none;
+    /* Adjust this value to match the width of your drawer */
   }
   
