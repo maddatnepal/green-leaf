@@ -1,0 +1,134 @@
+
+
+/*General Menu Styling*/
+.mainnav-d {
+    margin: 0 auto;
+ 
+}
+
+.mainnav-d  {
+    list-style: none;
+    background-color: none;
+}
+
+.mainnav-d li a {
+    text-decoration: none;
+}
+
+.dropdown-d {
+    position: absolute;
+    width: 100%;
+    top: 41px;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-out .35s;
+    -moz-transition: ease-out .35s;
+    -webkit-transition: ease-out .35s;
+}
+
+.mainnav-d li {
+    float: left;
+    padding: 5px;
+    background: var(--blue);
+    border-left: 1px solid #fff;
+}
+
+.mainnav-d li:first-child {
+    border: none;
+}
+
+.mainnav-d li a {
+    display: block;
+    padding: 2px 20px;
+    color: #fff;
+    font-family: arial;
+}
+
+.mainnav-d li:hover {
+    background: var(--red);
+    transition: ease-in .35s;
+    -moz-transition: ease-in .35s;
+    -webkit-transition: ease-in .35s;
+}
+
+.mainnav-d li:hover a {
+    color: var(--blue);
+    transition: ease-in .35s;
+    -moz-transition: ease-in .35s;
+    -webkit-transition: ease-in .35s;
+    color: white;
+}
+
+/*First Level*/
+.subs-d {
+    left:0px;
+    position: relative;
+    top: 70px;
+    width: 200px;
+    width: fit-content;
+    border-left: none !important;
+    border-bottom: 1px dotted #fff !important;
+   
+  
+}
+
+.subs-d:last-child {
+    border: none !important;
+}
+
+.hassubs-d:hover .dropdown-d,
+.hassubs-d .hassubs-d:hover .dropdown-d {
+    opacity: 1;
+    visibility: visible;
+    transition: ease-in .35s;
+    -moz-transition: ease-in .35s;
+    -webkit-transition: ease-in .35s;
+   
+}
+
+.mainnav-d li:hover ul a,
+.mainnav-d li:hover ul li ul li a {
+    color: white;
+}
+
+.mainnav-d li ul li:hover,
+.mainnav-d li ul li ul li:hover {
+    transition: ease-in-out .35s;
+    -moz-transition: ease-in-out .35s;
+    -webkit-transition: ease-in-out .35s;
+}
+
+.mainnav-d li ul li:hover a,
+.mainnav-d li ul li ul li:hover a {
+    color: var(--blue);
+    transition: ease-in-out .35s;
+    -moz-transition: ease-in-out .35s;
+    -webkit-transition: ease-in-out .35s;
+}
+
+/*Second Level*/
+.hassubs-d .hassubs-d .dropdown-d .subs-d {
+    left: 110px;
+    position: relative;
+    width: 200px;
+    top: 0;
+    
+}
+
+.hassubs-d .hassubs-d .dropdown-d {
+    position: absolute;
+    width: 300px;
+    left: -100px;
+    top: 73px;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-out .35s;
+    -moz-transition: ease-out .35s;
+    -webkit-transition: ease-out .35s;
+    background-color: red;
+}
+
+/* Adjust the last menu item within the dropdown-d */
+
+
+
