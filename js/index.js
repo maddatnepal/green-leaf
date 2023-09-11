@@ -96,7 +96,7 @@ changeImage("left");
    });
  });
 
-
+// drawer style
 
 const drawerToggle = document.getElementById('drawer-toggle');
 const drawer = document.getElementById('drawer');
@@ -113,3 +113,26 @@ function toggleBodyOverflow() {
 // Add an event listener to the drawerToggle element
 drawerToggle.addEventListener('change', toggleBodyOverflow);
 
+// popup image style
+  // Function to open the popup
+  function openPopup() {
+    const popupContainer = document.querySelector('.popup-container');
+    popupContainer.style.display = 'flex';
+}
+
+// Function to close the popup when clicked outside the image
+document.querySelector('.popup-container').addEventListener('click', function(event) {
+    if (event.target === this) {
+        closePopup();
+    }
+});
+
+// Function to close the popup
+function closePopup() {
+    const popupContainer = document.querySelector('.popup-container');
+    document.getElementsByTagName('body')[0].style.overflowY='scroll';
+    popupContainer.style.display = 'none';
+}
+
+// Open the popup when the page loads
+window.onload = openPopup;

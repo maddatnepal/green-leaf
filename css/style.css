@@ -193,15 +193,23 @@ body{
   white-space: nowrap;
   display: flex;
   animation: moveRightToLeft 10s linear infinite;
+  animation-delay: 3s;
+  justify-content: space-around;
+  
 }
-
+.taja-khabar>a{
+  cursor: pointer;
+  font-size: 0.7rem;
+}
 .taja-khabar  {
   margin-right: 20px; 
   padding: 3px;
   text-transform: capitalize;
   margin-top: 0px;
 }
-
+.taja-khabar:hover{
+  animation: none;
+}
 @keyframes moveRightToLeft {
   0% {
     transform: translateX(100%);

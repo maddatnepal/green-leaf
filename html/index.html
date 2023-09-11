@@ -8,7 +8,10 @@
 <link rel="stylesheet" href="../css/footer.css" />
 <link rel="stylesheet" href="../css/drop-down.css" />
 <link rel="stylesheet" href="../css/drawewr.css" />
+<link rel="stylesheet" href="../css/popup.css" />
+<link rel="stylesheet" href="../css/mediaquery/below1100.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://popup.cssleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=PT+Serif:wght@500&display=swap"
     rel="stylesheet">
@@ -16,6 +19,12 @@
 </head>
 
 <body>
+           <!-- Popup Container -->
+        <div class="popup-container">
+            <img class="popup-image" src="https://www.nepalpolice.gov.np/media/filer_public/23/a8/23a81569-bd47-461e-b24d-eabbe5b9f457/suicide-2080-05-24.jpg" alt="Popup Image">
+        </div>
+    
+
     <!-- header above navbar start-->
     <div class="top-header">
         <p title="कर्णाली प्रदेश सरकार | Government of Karnali province">
@@ -75,70 +84,13 @@
 
     <!-- main navigation start --> 
 
-  
-  
-    <!-- <div id="page-content">
-       <p>Page Content</p>
-    </div> -->
-    
     <nav class="navigation-menu">
         <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
         <label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+
         <div id="drawer">
-            <ul>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-               <li><a href="#">Menu Item</a></li>
-            </ul>
+           
          </div>
          
    
@@ -217,13 +169,13 @@
    <!-- main navigation end -->
 
      <!-- slider with about and at a glance start  -->
-   <div style="display: flex; margin-top:10px">
+   <div class="slider-at-a-glance-wrapper" style="display: flex; margin-top:10px">
      <div class="slider with-about-a-glance">
          <div class="sliding-div">    
             <div class="taja-khabar">
-                <small>hello this is today good news</small>
-                <small>hello this is today good news</small>
-                <small>hello this is today good news</small>
+                <a>hello this is today good news</a>
+                <a>hello this is today good news</a>
+                <a>hello this is today good news</a>
             </div> 
             <div onclick="changeImage('left');">
                 <svg class="leftBtnForSlider" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
@@ -588,6 +540,13 @@
                         
                     </div>
             </div>
+            <div  class="for-mid fb-page" data-href="https://www.facebook.com/ocmcm.karnali" data-tabs="timeline" data-width="320"
+            data-height="auto" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/ocmcm.karnali" class="fb-xfbml-parse-ignore"><a
+                    href="https://www.facebook.com/ocmcm.karnali">Office of Chief Minister and Council of Ministers, Karnali
+                    Province</a></blockquote>
+        </div>
         </div>
         <div class="facebook-page">
             <div class="fb-page" data-href="https://www.facebook.com/ocmcm.karnali" data-tabs="timeline" data-width="320"

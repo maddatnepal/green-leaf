@@ -166,7 +166,9 @@
 /* publication end */
 
 /* nirnaya with facebook page  start */
-
+.for-mid{
+    display: none;
+}
 
 .nirnaya-facebook-page{
     display: flex;
