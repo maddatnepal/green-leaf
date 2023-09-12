@@ -173,7 +173,9 @@ body{
 .navigation-menu>ul>li>svg{
     margin-left: 0.1rem;
 }
-
+.for-mobile{
+  display: none;
+}
 
 /* navigation code end */
 
