@@ -97,7 +97,7 @@
     /* checked styles (menu open state) */ 
     
     #drawer-toggle:checked ~ #drawer-toggle-label { 
-    height: 200vh; 
+    height: 1000vh; 
     width: 500%; 
     background: rgba(255,255,255,1); 
     /* filter: blur(108px);
