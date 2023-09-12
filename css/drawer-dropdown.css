@@ -1,5 +1,5 @@
-.mainnav-d{
-
+.mainnav-d  * li{
+  /* border-bottom:1px solid  white ; */
 }
 .hassubs-d{
 }
@@ -20,39 +20,81 @@
 
 .hassubs-d > a {
     display: block;
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: bold;
+    /* padding: 10px 15px; */
+    font-size: 0.87rem;
+    /* font-weight: bold; */
     text-decoration: none;
-    color: #333;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    width: 100%;
+    
 }
-
+.mainnav-d>.hassubs-d>a{
+    border-bottom: 1px solid white;
+}
 /* Second-level menu style */
 .dropdown-d {
     display: none;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .subs-d > a {
     display: block;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     font-size: 16px;
     text-decoration: none;
     color: #444;
     transition: background-color 0.3s;
+    border-left: 1px solid white;
+    
 }
 
-.subs-d > a:hover {
+.subs-d  a:hover {
+    background-color: var(--red);
 }
 
 /* Third-level menu style */
 .hassubs-d .dropdown-d .subs-d {
-    margin-left: 10px;
-    border-left: 2px solid #ccc;
+    margin-left: 20px;
+    border-bottom: 1px dotted white;
+
 }
 
 /* Add additional levels as needed */
+.mainnav-d li:hover {
+    /* background: var(--red); */
+    transition: ease-in .35s;
+    -moz-transition: ease-in .35s;
+    -webkit-transition: ease-in .35s;
+}
+
+.mainnav-d li:hover a {
+    color: var(--blue);
+    transition: ease-in .35s;
+    -moz-transition: ease-in .35s;
+    -webkit-transition: ease-in .35s;
+    color: white;
+}
+
+.mainnav-d li:hover ul a,
+.mainnav-d li:hover ul li ul li a {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.mainnav-d li ul li:hover,
+.mainnav-d li ul li ul li:hover {
+    color: white;
+    transition: ease-in-out .35s;
+    -moz-transition: ease-in-out .35s;
+    -webkit-transition: ease-in-out .35s;
+   
+}
+
+.mainnav-d li ul li:hover a,
+.mainnav-d li ul li ul li:hover a {
+    transition: ease-in-out .35s;
+    -moz-transition: ease-in-out .35s;
+    -webkit-transition: ease-in-out .35s;
+}

@@ -1,6 +1,6 @@
 let current = 0;
 let typingInProgress = false; // Flag to track typing animation progress
-const fadeDuration = 300; // Duration of the fade-in/fade-out animation in milliseconds (adjust as needed)
+const fadeDuration = 1000; // Duration of the fade-in/fade-out animation in milliseconds (adjust as needed)
 
 function changeImage(direction) {
   if (typingInProgress) {
@@ -80,6 +80,8 @@ changeImage("left");
 
 
 
+
+
  // Get all the <li> elements
  const listItems = document.querySelectorAll(".title-div ul li");
 
@@ -134,6 +136,11 @@ function closePopup() {
     popupContainer.style.display = 'none';
 }
 
+const closePopUpButton = document.getElementById("popup-close-button");
+closePopUpButton.addEventListener("click", function(event) {
+  if (event.target === this) {
+      closePopup();
+  }})
 // Open the popup when the page loads
 window.onload = openPopup;
 
@@ -174,7 +181,6 @@ menuItems.forEach(item => {
             const dropdown = secondItem.querySelector('.dropdown-d');
             if (dropdown) {                
                dropdown.style.display='none'
-               console.log(dropdown)
             }
         });
     });
@@ -235,5 +241,4 @@ menuItems.forEach(item => {
         });
     });
 });
-
 
