@@ -140,3 +140,100 @@ window.onload = openPopup;
 
 
 
+
+
+// Get all elements with the class "hassubs-d"
+const menuItems = document.querySelectorAll('.hassubs-d');
+
+// Add a mouseover event listener to each first-level menu item
+menuItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        // Hide all first-level dropdowns
+        document.querySelectorAll('.main-nav .dropdown-d').forEach(dropdown => {
+            dropdown.style.display = 'none';
+        });
+
+        // Show the first-level dropdown of the hovered menu item
+        const dropdown = item.querySelector('.dropdown-d');
+        if (dropdown) {
+            dropdown.style.display = 'block';
+        }
+    });
+
+    // Add a mouseover event listener to each second-level menu item
+    const secondLevelItems = item.querySelectorAll('.hassubs-d');
+    console.log([...secondLevelItems])
+    secondLevelItems.forEach(secondItem => {
+        secondItem.addEventListener('mouseover', () => {
+            // Hide all second-level dropdowns
+            document.querySelectorAll('.dropdown-d').forEach(dropdown => {
+                dropdown.style.display = 'none';
+            });
+
+            // Show the second-level dropdown of the hovered menu item
+            const dropdown = secondItem.querySelector('.dropdown-d');
+            if (dropdown) {                
+               dropdown.style.display='none'
+               console.log(dropdown)
+            }
+        });
+    });
+});
+
+
+// Get all elements with the class "hassubs-d"
+
+// Function to show the dropdown
+function showDropdown(item) {
+    const dropdown = item.querySelector('.dropdown-d');
+    if (dropdown) {
+        dropdown.style.display = 'block';
+    }
+}
+
+// Function to hide the dropdown
+function hideDropdown(item) {
+    const dropdown = item.querySelector('.dropdown-d');
+    if (dropdown) {
+        dropdown.style.display = 'none';
+    }
+}
+
+// Add mouseover event listener to each first-level menu item
+menuItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        // Hide all first-level dropdowns
+        document.querySelectorAll('.main-nav .dropdown-d').forEach(dropdown => {
+            dropdown.style.display = 'none';
+        });
+
+        // Show the first-level dropdown of the hovered menu item
+        showDropdown(item);
+    });
+
+    // Add mouseout event listener to hide the first-level dropdown
+    item.addEventListener('mouseout', () => {
+        hideDropdown(item);
+    });
+
+    // Add mouseover event listener to each second-level menu item
+    const secondLevelItems = item.querySelectorAll('.hassubs-d');
+    secondLevelItems.forEach(secondItem => {
+        secondItem.addEventListener('mouseover', () => {
+            // Hide all second-level dropdowns
+            document.querySelectorAll('.dropdown-d').forEach(dropdown => {
+                dropdown.style.display = 'none';
+            });
+
+            // Show the second-level dropdown of the hovered menu item
+            showDropdown(secondItem);
+        });
+
+        // Add mouseout event listener to hide the second-level dropdown
+        secondItem.addEventListener('mouseout', () => {
+            hideDropdown(secondItem);
+        });
+    });
+});
+
+

@@ -62,10 +62,11 @@ li a {
     left: -15px;
     position: relative;
     top: -8px;
-    width: 200px;
+    width: 245px !important;
     width: fit-content;
     border-left: none !important;
     border-bottom: 1px dotted #fff !important;
+    background-color: var(--blue);
   
 }
 
@@ -89,15 +90,16 @@ li a {
 
 .mainnav li ul li:hover,
 .mainnav li ul li ul li:hover {
-    background: #fff;
+    background:var(--red);
+    color: white;
     transition: ease-in-out .35s;
     -moz-transition: ease-in-out .35s;
     -webkit-transition: ease-in-out .35s;
+   
 }
 
 .mainnav li ul li:hover a,
 .mainnav li ul li ul li:hover a {
-    color: var(--blue);
     transition: ease-in-out .35s;
     -moz-transition: ease-in-out .35s;
     -webkit-transition: ease-in-out .35s;
@@ -114,7 +116,7 @@ li a {
 .hassubs .hassubs .dropdown {
     position: absolute;
     width: 150px;
-    left: -310px;
+    left: -356px;
     top: 0px;
     opacity: 0;
     visibility: hidden;

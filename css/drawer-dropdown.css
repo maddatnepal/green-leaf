@@ -2,8 +2,57 @@
 
 }
 .hassubs-d{
-
 }
 .hassubs-d>.dropdown-d{
-    display: initial;
+    display: none;
 }
+
+
+
+
+
+/* First-level menu style */
+.mainnav-d {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hassubs-d > a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+/* Second-level menu style */
+.dropdown-d {
+    display: none;
+    margin-left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.subs-d > a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #444;
+    transition: background-color 0.3s;
+}
+
+.subs-d > a:hover {
+}
+
+/* Third-level menu style */
+.hassubs-d .dropdown-d .subs-d {
+    margin-left: 10px;
+    border-left: 2px solid #ccc;
+}
+
+/* Add additional levels as needed */
